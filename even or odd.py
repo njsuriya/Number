@@ -1,8 +1,14 @@
-a=int(input("Enter the Number:"))
-if a>0:
-    if a%2:
-        print("ODD")
-    else:
-        print("EVEN")
+while True:
+    
+    try:
+        a = int(input("Enter the Number:"))
+        break
+    
+    except:
+        print("Please enter a WHOLE NUMBER!")
+
+if a%2:
+    print("ODD")
+    
 else:
-    print("INVALID")
+    print("EVEN")
